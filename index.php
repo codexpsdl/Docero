@@ -139,7 +139,7 @@ echo $OUTPUT->header();
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 70vh;
         }
         
         /* Start form attributes */
@@ -274,7 +274,7 @@ echo $OUTPUT->header();
         <form>       
             <div class="con">                
                 <header class="head-form">
-                    <h2>Codex</h2>                                 
+                    <h2>Docero</h2>                                 
                 </header>
                 <br>
                 <div class="field-set">
