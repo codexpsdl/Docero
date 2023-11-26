@@ -96,7 +96,22 @@ if (get_home_page() != HOMEPAGE_SITE) {
     }
 }
 
+// Trigger event.
+course_view(context_course::instance(SITEID));
 
+$PAGE->set_pagetype('site-index');
+$PAGE->set_docs_path('');
+$editing = $PAGE->user_is_editing();
+$PAGE->set_title(get_string('home'));
+$PAGE->set_secondary_active_tab('coursehome');
+
+$courserenderer = $PAGE->get_renderer('core', 'course');
+
+if ($hassiteconfig) {
+    $editurl = new moodle_url('/course/view.php', ['id' => SITEID, 'sesskey' => sesskey()]);
+    $editbutton = $OUTPUT->edit_button($editurl);
+    $PAGE->set_button($editbutton);
+}
 
 echo $OUTPUT->header();
 ?>
