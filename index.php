@@ -127,8 +127,8 @@ echo $OUTPUT->header();
             box-sizing: border-box;
         }
         
-        
-        
+        /* Start body rules */
+       
         
         /* Start form attributes */
         form {
@@ -139,7 +139,8 @@ echo $OUTPUT->header();
             box-shadow: 0 9px 50px hsl(218deg 51% 90%);
             padding: 2%;
             background-color: hsl(231deg 62% 94%);
-            margin: center;
+            justify-content: center;
+            align-items: center;
         }
         
         /* form Container */
