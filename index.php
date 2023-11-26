@@ -127,20 +127,8 @@ echo $OUTPUT->header();
             box-sizing: border-box;
         }
         
-        /* Start body rules */
-        body {
-            
-            background-color: hsl(218deg 51% 90%);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            font-family: 'Vibur', cursive;
-            font-family: 'Abel', sans-serif;
-            opacity: 0.95;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 85vh;
-        }
+        
+        
         
         /* Start form attributes */
         form {
