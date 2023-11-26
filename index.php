@@ -116,7 +116,7 @@ if ($hassiteconfig) {
 
 echo $OUTPUT->header();
 
-echo "hello world";
+echo "hello world dsdwefwef";
 $siteformatoptions = course_get_format($SITE)->get_format_options();
 $modinfo = get_fast_modinfo($SITE);
 $modnamesused = $modinfo->get_used_module_names();
