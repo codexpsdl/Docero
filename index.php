@@ -139,6 +139,7 @@ echo $OUTPUT->header();
             box-shadow: 0 9px 50px hsl(218deg 51% 90%);
             padding: 2%;
             background-color: hsl(231deg 62% 94%);
+            margin: center;
         }
         
         /* form Container */
