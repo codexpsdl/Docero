@@ -128,7 +128,18 @@ echo $OUTPUT->header();
         }
         
         /* Start body rules */
-       
+        body {
+            
+            background-color: hsl(218deg 51% 90%);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Vibur', cursive;
+            font-family: 'Abel', sans-serif;
+            opacity: 0.95;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         
         /* Start form attributes */
         form {
@@ -139,8 +150,6 @@ echo $OUTPUT->header();
             box-shadow: 0 9px 50px hsl(218deg 51% 90%);
             padding: 2%;
             background-color: hsl(231deg 62% 94%);
-            justify-content: center;
-            align-items: center;
         }
         
         /* form Container */
