@@ -22,6 +22,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+echo "hello world";
+
 if (!file_exists('./config.php')) {
     header('Location: install.php');
     die;
