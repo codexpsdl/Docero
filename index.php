@@ -308,26 +308,7 @@ echo $OUTPUT->header();
 </html>
 
 <?php
-$siteformatoptions = course_get_format($SITE)->get_format_options();
-$modinfo = get_fast_modinfo($SITE);
-$modnamesused = $modinfo->get_used_module_names();
 
-// Print Section or custom info.
-if (!empty($CFG->customfrontpageinclude)) {
-    // Pre-fill some variables that custom front page might use.
-    $modnames = get_module_types_names();
-    $modnamesplural = get_module_types_names(true);
-    $mods = $modinfo->get_cms();
-
-    include($CFG->customfrontpageinclude);
-
-} else if ($siteformatoptions['numsections'] > 0) {
-    echo $courserenderer->frontpage_section1();
-}
-// Include course AJAX.
-include_course_ajax($SITE, $modnamesused);
-
-echo $courserenderer->frontpage();
 
 if ($editing && has_capability('moodle/course:create', context_system::instance())) {
     echo $courserenderer->add_new_course_button();
