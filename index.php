@@ -22,7 +22,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-echo "hello world";
 
 if (!file_exists('./config.php')) {
     header('Location: install.php');
@@ -116,6 +115,8 @@ if ($hassiteconfig) {
 }
 
 echo $OUTPUT->header();
+
+echo "hello world";
 
 $siteformatoptions = course_get_format($SITE)->get_format_options();
 $modinfo = get_fast_modinfo($SITE);
