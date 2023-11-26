@@ -139,7 +139,7 @@ echo $OUTPUT->header();
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 70vh;
+            height: 85vh;
         }
         
         /* Start form attributes */
