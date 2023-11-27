@@ -32,7 +32,7 @@ $site = get_site();
 if ($CFG->forcelogin) {
     require_login();
 }
-
+//test
 $heading = $site->fullname;
 if ($categoryid) {
     $category = core_course_category::get($categoryid); // This will validate access.

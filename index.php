@@ -105,7 +105,7 @@ $editing = $PAGE->user_is_editing();
 $PAGE->set_title(get_string('home'));
 $PAGE->set_heading($SITE->fullname);
 $PAGE->set_secondary_active_tab('coursehome');
-echo "hello world";
+
 $courserenderer = $PAGE->get_renderer('core', 'course');
 
 if ($hassiteconfig) {
